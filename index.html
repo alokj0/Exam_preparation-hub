@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ExamPrep Hub — Exam preparation for BCA students</title>
+  <meta name="description" content="Previous year question papers, teacher-picked important questions and timed practice quizzes for BCA students.">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("examprephub_theme")||"light")}catch(e){}</script>
+</head>
+<body class="landing">
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="lp-nav">
+    <div class="lp-wrap">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" id="logo-ic"></span>
+        <span class="logo-text"><b>ExamPrep Hub</b><small>FOR BCA STUDENTS</small></span>
+      </a>
+      <nav class="lp-links">
+        <a href="#features">Features</a>
+        <a href="#how">How it works</a>
+        <a href="#semesters">Semesters</a>
+        <a href="#teachers">For Teachers</a>
+        <a href="#team">Team</a>
+      </nav>
+      <div class="lp-actions">
+        <button class="icon-btn" data-theme-toggle title="Toggle dark mode" onclick="Theme.toggle()"></button>
+        <a class="btn btn-outline" href="login.html" id="nav-login">Log in</a>
+        <a class="btn btn-primary" href="login.html?mode=register" id="nav-start">Get started</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ================= HERO ================= -->
+  <section class="lp-hero">
+    <div class="lp-wrap">
+      <div>
+        <span class="new-pill"><b>NEW</b> Papers · Important Qs · Quizzes — one hub</span>
+        <h1>Stop hunting for notes.<br><span class="grad-text">Start preparing smart.</span></h1>
+        <p class="lead">ExamPrep Hub brings previous year question papers, teacher-picked important questions and timed practice quizzes together — organised by semester and subject for every BCA student.</p>
+        <div class="lp-cta">
+          <a class="btn btn-primary btn-lg" href="login.html?mode=register" id="hero-start">Start preparing — it's free <span id="arrow-ic"></span></a>
+          <a class="btn btn-outline btn-lg" href="login.html" id="hero-login">I have an account</a>
+        </div>
+        <div class="lp-stats">
+          <div><b id="st-papers">14</b><small>Question papers</small></div>
+          <div><b id="st-iq">35</b><small>Important questions</small></div>
+          <div><b id="st-mcq">70</b><small>Practice MCQs</small></div>
+        </div>
+      </div>
+
+      <!-- decorative product preview -->
+      <div class="mock" aria-hidden="true">
+        <div class="card mock-quiz">
+          <div class="mock-dots">
+            <span><i style="background:#f87171"></i><i style="background:#fbbf24"></i><i style="background:#34d399"></i></span>
+            <span class="pill-lg">DBMS · Quiz</span>
+          </div>
+          <div class="bar bar-purple"><span style="width:60%"></span></div>
+          <small>Question 6 of 10</small>
+          <h5>Which clause filters groups created by GROUP BY?</h5>
+          <div class="mock-opt"><i>A</i>WHERE</div>
+          <div class="mock-opt ok"><i>B</i>HAVING</div>
+          <div class="mock-opt"><i>C</i>ORDER BY</div>
+          <div class="mock-opt"><i>D</i>LIMIT</div>
+        </div>
+        <div class="float float-iq">
+          <small>⭐ Important · 10 marks</small>
+          <b>Explain 1NF, 2NF and 3NF with examples.</b>
+          <div class="tags"><span class="tag tag-red">Very Important</span><span class="tag tag-sky">2024 · 2023</span></div>
+        </div>
+        <div class="float float-score">
+          <span class="stat-ic green" id="trophy-ic"></span>
+          <div><b>90%</b><small>Operating Systems quiz</small></div>
+          <div class="bar bar-teal"><span style="width:90%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="lp-section alt" id="features">
+    <div class="lp-wrap">
+      <div class="center">
+        <span class="eyebrow">Features</span>
+        <h2 class="lp-h2">Everything you need before the exam</h2>
+        <p class="lp-sub">No more scattered notes, chat groups and photocopies. One organised place for all your exam material.</p>
+      </div>
+      <div class="grid g-3 mt-24" id="feature-grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="lp-section" id="how">
+    <div class="lp-wrap">
+      <div class="center">
+        <span class="eyebrow">How it works</span>
+        <h2 class="lp-h2">Three steps to better marks</h2>
+        <p class="lp-sub">A simple routine that turns last-minute panic into structured revision.</p>
+      </div>
+      <div class="grid g-3 mt-24">
+        <div class="card step"><div class="step-num grad-text">01</div><h3>Pick your semester</h3><p>Sign up as a student and choose your semester. Papers, questions and quizzes are filtered for you.</p></div>
+        <div class="card step"><div class="step-num grad-text">02</div><h3>Revise what matters</h3><p>Go through previous year papers and the important questions your teachers marked. Save the tricky ones.</p></div>
+        <div class="card step"><div class="step-num grad-text">03</div><h3>Test yourself</h3><p>Attempt timed quizzes, review every answer with explanations and track your subject-wise progress.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SEMESTERS ================= -->
+  <section class="lp-section alt" id="semesters">
+    <div class="lp-wrap">
+      <div class="center">
+        <span class="eyebrow">Semesters</span>
+        <h2 class="lp-h2">All six BCA semesters covered</h2>
+        <p class="lp-sub">Material is arranged semester-wise and subject-wise, exactly how your exams are.</p>
+      </div>
+      <div class="grid g-3 mt-24" id="sem-grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= FOR TEACHERS ================= -->
+  <section class="lp-section" id="teachers">
+    <div class="lp-wrap teacher-split">
+      <div>
+        <span class="eyebrow">For Teachers</span>
+        <h2 class="lp-h2">Guide students to what really matters</h2>
+        <p class="lp-sub">Teachers get their own panel to share material and follow how the class is doing.</p>
+        <ul class="check-list" id="teacher-list"></ul>
+        <a class="btn btn-primary btn-lg" href="login.html?mode=register&role=teacher">Join as a teacher</a>
+      </div>
+      <div class="card card-pad">
+        <div class="card-head"><h3>Quiz performance (class average)</h3><span class="tag tag-primary">Teacher Panel</span></div>
+        <div class="bars" id="teacher-preview"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEAM ================= -->
+  <section class="lp-section alt" id="team">
+    <div class="lp-wrap">
+      <div class="center">
+        <span class="eyebrow">Team</span>
+        <h2 class="lp-h2">Built by BCA students, for BCA students</h2>
+        <p class="lp-sub">School of Computer Applications, Graphic Era Hill University · Section C2 · Mentor: Amit Juyal</p>
+      </div>
+      <div class="grid g-4 mt-24" id="team-grid"></div>
+    </div>
+  </section>
+
+  <!-- ================= CTA ================= -->
+  <section class="lp-section">
+    <div class="lp-wrap">
+      <div class="cta-band">
+        <div>
+          <h2>Your next exam starts here.</h2>
+          <p>Create a free account and start revising in under a minute.</p>
+        </div>
+        <a class="btn btn-white btn-lg" href="login.html?mode=register" id="cta-start">Get started</a>
+      </div>
+    </div>
+  </section>
+
+  <footer class="lp-footer">
+    <div class="lp-wrap">
+      <span>© <span id="year"></span> ExamPrep Hub — A Web-Based Exam Preparation Platform for BCA Students</span>
+      <span>School of Computer Applications · Graphic Era Hill University</span>
+    </div>
+  </footer>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/landing.js"></script>
+</body>
+</html>

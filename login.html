@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Log in · ExamPrep Hub</title>
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script>try{document.documentElement.setAttribute("data-theme",localStorage.getItem("examprephub_theme")||"light")}catch(e){}</script>
+</head>
+<body>
+  <div class="auth">
+    <!-- left: brand panel -->
+    <aside class="auth-side">
+      <a class="logo" href="index.html">
+        <span class="logo-mark" id="logo-ic"></span>
+        <span class="logo-text"><b>ExamPrep Hub</b><small>FOR BCA STUDENTS</small></span>
+      </a>
+      <div>
+        <h2>Stop hunting for notes.<br>Start preparing smart.</h2>
+        <p>Previous year papers, teacher-picked important questions and timed quizzes — all in one hub.</p>
+        <div class="auth-points" id="auth-points"></div>
+      </div>
+      <small style="opacity:.75">School of Computer Applications · Graphic Era Hill University</small>
+    </aside>
+
+    <!-- right: form -->
+    <main class="auth-main">
+      <div class="theme-corner">
+        <a class="icon-btn" href="index.html" title="Back to home" id="home-ic"></a>
+        <button class="icon-btn" data-theme-toggle onclick="Theme.toggle()" title="Toggle dark mode"></button>
+      </div>
+
+      <div class="auth-box">
+        <h1 id="auth-title">Welcome back 👋</h1>
+        <p id="auth-sub">Log in to continue your exam preparation.</p>
+
+        <div class="role-tabs" id="role-tabs">
+          <button type="button" data-role="student" class="active">🎓 Student</button>
+          <button type="button" data-role="teacher">👩‍🏫 Teacher</button>
+        </div>
+
+        <!-- LOGIN -->
+        <form id="login-form" class="grid-form" novalidate>
+          <div class="field"><label for="l-email">Email</label><input class="input" type="email" id="l-email" placeholder="you@college.edu" autocomplete="email"></div>
+          <div class="field"><label for="l-pass">Password</label><input class="input" type="password" id="l-pass" placeholder="Your password" autocomplete="current-password"></div>
+          <div class="form-error" id="l-error"></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Log in</button>
+          <div class="divider">or try a demo account</div>
+          <div class="demo-row">
+            <button type="button" class="btn btn-outline" id="demo-student">Demo student</button>
+            <button type="button" class="btn btn-outline" id="demo-teacher">Demo teacher</button>
+          </div>
+          <p class="switch-line">New here? <a href="?mode=register" id="to-register">Create an account</a></p>
+        </form>
+
+        <!-- REGISTER -->
+        <form id="register-form" class="grid-form hidden" novalidate>
+          <div class="field"><label for="r-name">Full name</label><input class="input" id="r-name" placeholder="Your name" autocomplete="name"></div>
+          <div class="field"><label for="r-email">Email</label><input class="input" type="email" id="r-email" placeholder="you@college.edu" autocomplete="email"></div>
+          <div class="field"><label for="r-pass">Password</label><input class="input" type="password" id="r-pass" placeholder="At least 6 characters" autocomplete="new-password"></div>
+          <div class="field" id="r-sem-field"><label for="r-sem">Current semester</label><div class="select"><select id="r-sem"></select><span id="chev"></span></div></div>
+          <div class="field hidden" id="r-code-field"><label for="r-code">Teacher code</label><input class="input" id="r-code" placeholder="Code from the department">
+            <span class="hint">Only teachers can register. Demo code: <b>GEHU-TEACH</b></span></div>
+          <div class="form-error" id="r-error"></div>
+          <button class="btn btn-primary btn-lg btn-block" type="submit">Create account</button>
+          <p class="switch-line">Already have an account? <a href="?mode=login" id="to-login">Log in</a></p>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/config.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/core.js"></script>
+  <script src="js/auth.js"></script>
+</body>
+</html>
